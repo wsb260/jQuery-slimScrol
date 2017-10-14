@@ -1,7 +1,7 @@
+jQuery slimScrol
 TIP：
 1.slimScroll在使用的时候要依赖JQ，所以首次使用的时候要引入JQ再引入simScroll插件
 2.不支持resize的时候重新调用插件，不过已经修改过源码，这是修改过的版本
-
 resize重新调用插件增加的代码部分：
 	function setScroll(){
 		$(".box-list").slimScroll({
@@ -18,6 +18,7 @@ resize重新调用插件增加的代码部分：
 插件的调用以及参数设置：
 $(function() {
     $(".slimscroll").slimScroll({
+    
         width: 'auto', //可滚动区域宽度
         height: '100%', //可滚动区域高度
         size: '10px', //组件宽度
@@ -40,6 +41,7 @@ $(function() {
         touchScrollStep: 200, //滚动量当用户使用手势
         borderRadius: '7px', //滚动条圆角
         railBorderRadius: '7px' //轨道圆角
+	
     });
 });
 
